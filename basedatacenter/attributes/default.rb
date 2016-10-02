@@ -1,6 +1,6 @@
 override['apt']['compile_time_update'] = true
 
-
+default['basedatacenter']['private_key']['path']='/home/docker/.ssh/id_rsa'
   
 default['java']['jdk_version'] = '8'
 default['java']['install_flavor'] = 'oracle'

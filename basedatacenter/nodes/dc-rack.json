@@ -28,6 +28,9 @@
   "data_bags_path":"data_bags",
   "run_list":
   [
-    "recipe[basedatacenter::platform]"
+    "recipe[basedatacenter::platform]",
+    "recipe[basedatacenter::users]",
+    "recipe[basedatacenter::docker]"
+   
   ]
 }
