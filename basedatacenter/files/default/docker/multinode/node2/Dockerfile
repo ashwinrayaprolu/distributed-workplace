@@ -17,6 +17,18 @@ RUN \
   apt-get install -y oracle-java7-installer && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk7-installer
+  
+  
+# Install InetUtils for Ping/traceroute/ifconfig
+RUN apt-get update
+# For Ifconfig and other commands
+RUN apt-get install -y net-tools
+# For ping command
+RUN apt-get install -y iputils-ping 
+# For Traceroute
+RUN apt-get install -y inetutils-traceroute
+
+
 
 # Define working directory.
 WORKDIR /data

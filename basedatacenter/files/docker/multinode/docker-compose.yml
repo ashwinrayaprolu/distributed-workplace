@@ -1,8 +1,0 @@
-version: '2'
-services:
-  node1:
-    image: arayaprolu/basexenial
-  node2:
-    image: arayaprolu/basexenial
-  node3:
-    image: arayaprolu/basexenial
